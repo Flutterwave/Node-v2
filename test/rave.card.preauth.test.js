@@ -81,37 +81,37 @@
 //         })
 //     })
 
-//     describe("#rave void transaction test", function(){
-//         it("should return a void successful response", function(done){
-//             this.timeout(15000);
-//             var ravebase = new base(process.env.PUBLIC_KEY, process.env.SECRET_KEY, "https://ravesandboxapi.flutterwave.com");
-//             var preauthInstance = new preauth(ravebase);
-//             var payload = {
-//                 "id": "29518",
-//                 "action": "void",
-//                 "SECKEY": process.env.SECRET_KEY
-//             }
-//             var result = preauthInstance.void(payload).then(resp => {
-//                 return resp.body;
-//             });
-//              expect(result).to.eventually.have.deep.property('message', 'No PBTX transaction found').notify(done);
-//         })
+    // describe("#rave void transaction test", function(){
+    //     it("should return a void successful response", function(done){
+    //         this.timeout(15000);
+    //         var ravebase = new base(process.env.PUBLIC_KEY, process.env.SECRET_KEY, "https://ravesandboxapi.flutterwave.com");
+    //         var preauthInstance = new preauth(ravebase);
+    //         var payload = {
+    //             "id": "29518",
+    //             "action": "void",
+    //             "SECKEY": process.env.SECRET_KEY
+    //         }
+    //         var result = preauthInstance.void(payload).then(resp => {
+    //             return resp.body;
+    //         });
+    //          expect(result).to.eventually.have.deep.property('message', 'No PBTX transaction found').notify(done);
+    //     })
 
-//         it("should return a success status in the data object from response.", function(done){
-//             this.timeout(15000);
-//             var ravebase = new base(process.env.PUBLIC_KEY, process.env.SECRET_KEY, "https://ravesandboxapi.flutterwave.com");
-//             var preauthInstance = new preauth(ravebase);
-//             var payload = {
-//                 "id": "29518",
-//                 "action": "void",
-//                 "SECKEY":  process.env.SECRET_KEY
-//             }
-//             var result = preauthInstance.void(payload).then(resp => {
-//                 return resp.body.data;
-//             });
-//              expect(result).to.eventually.have.property('status', 'success').notify(done);
-//         })
-//     })
+    //     it("should return a success status in the data object from response.", function(done){
+    //         this.timeout(15000);
+    //         var ravebase = new base(process.env.PUBLIC_KEY, process.env.SECRET_KEY, "https://ravesandboxapi.flutterwave.com");
+    //         var preauthInstance = new preauth(ravebase);
+    //         var payload = {
+    //             "id": "29518",
+    //             "action": "void",
+    //             "SECKEY":  process.env.SECRET_KEY
+    //         }
+    //         var result = preauthInstance.void(payload).then(resp => {
+    //             return resp.body.data;
+    //         });
+    //          expect(result).to.eventually.have.property('status', 'success').notify(done);
+    //     })
+    // })
 
 //     describe("#Rave refund transaction test", function(){
 //         it("should return a refund complete message", function(done){

@@ -44,6 +44,7 @@ var spec = morx.spec()
 	.build('3DS_OVERRIDE', 'required:false')
 	.build('network', 'required:false')
 	.build('subaccounts', 'required:false')
+	.build('usesecureauth', 'required:false, eg:false')
 	.end();
 
 function service(data, _rave) {
