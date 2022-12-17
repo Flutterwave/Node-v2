@@ -34,7 +34,7 @@
     "chai": "^4.1.1",
     "chai-as-promised": "^7.1.1",
     "dotenv": "^4.0.0",
-    "mocha": "^5.2.0",
+    "mocha": "^10.2.0",
     "should": "^11.2.1"
   },
   "bugs": {
