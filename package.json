@@ -35,7 +35,7 @@
     "chai-as-promised": "^7.1.1",
     "dotenv": "^4.0.0",
     "mocha": "^10.2.0",
-    "should": "^11.2.1"
+    "should": "^13.2.3"
   },
   "bugs": {
     "url": "https://github.com/Flutterwave/ravepay-nodejs/issues"
