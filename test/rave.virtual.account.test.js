@@ -1,6 +1,4 @@
-require('dotenv').config({
-    path: '../.env'
-});
+var dotenv = require('dotenv').config()
 
 var accountNumber  = require('../lib/rave.virtualAccountNumber');
 var base = require('../lib/rave.base');
