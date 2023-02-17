@@ -5,7 +5,7 @@ var mocha = require('mocha');
 var chai = require('chai');
 var expect = chai.expect;
 var chaiAsPromised = require('chai-as-promised');
-require('dotenv').config({ path: '../.env' });
+var dotenv = require('dotenv').config()
 
 chai.use(chaiAsPromised);
 

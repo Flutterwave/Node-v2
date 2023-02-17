@@ -1,6 +1,4 @@
-require('dotenv').config({
-    path: '../.env'
-});
+var dotenv = require('dotenv').config()
 
 var settlements = require('../lib/rave.settlements');
 var base = require('../lib/rave.base');

@@ -1,6 +1,4 @@
-require('dotenv').config({
-    path: '../.env'
-});
+var dotenv = require('dotenv').config()
 
 var verifytransaction  = require('../lib/rave.verify.transaction');
 var base = require('../lib/rave.base');

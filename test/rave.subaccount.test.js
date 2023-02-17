@@ -1,6 +1,4 @@
-require('dotenv').config({
-    path: '../.env'
-});
+var dotenv = require('dotenv').config()
 
 var subaccount = require('../lib/rave.subaccount');
 var base = require('../lib/rave.base');
