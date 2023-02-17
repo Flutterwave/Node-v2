@@ -30,14 +30,14 @@ jobs:
         run: |
           echo Update documentation files and README.md before push
           exit 1
-      - name: push build status to Slack
-        uses: 8398a7/action-slack@v3
-        with:
-          status: ${{ job.status }}
-          fields: repo,message,commit,author,action,eventName,ref,workflow,job,took,pullRequest
-        env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-        if: always()
+      # - name: push build status to Slack
+      #   uses: 8398a7/action-slack@v3
+      #   with:
+      #     status: ${{ job.status }}
+      #     fields: repo,message,commit,author,action,eventName,ref,workflow,job,took,pullRequest
+      #   env:
+      #     SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+      #   if: always()
 
   # distribute:
   #   runs-on: ubuntu-latest
