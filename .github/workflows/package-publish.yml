@@ -34,6 +34,7 @@ jobs:
           fields: repo,message,commit,author,action,eventName,ref,workflow,job,took,pullRequest
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          MATRIX_CONTEXT: ${{ toJson(matrix) }}
         if: always()
 
   distribute:
@@ -63,4 +64,5 @@ jobs:
           fields: repo,message,commit,author,action,eventName,ref,workflow,job,took,pullRequest
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          MATRIX_CONTEXT: ${{ toJson(matrix) }}
         if: always()
