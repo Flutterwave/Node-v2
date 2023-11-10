@@ -19,7 +19,7 @@
     "url": "git+https://github.com/Flutterwave/ravepay-nodejs.git"
   },
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^1.6.0",
     "bluebird": "^3.5.0",
     "chai-as-promised-also-chain": "^1.0.2",
     "md5": "2.2.1",
